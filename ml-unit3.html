@@ -1,1 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Unit 3 | Correlation and Regression Activities | Chantelle Fields</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
 
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo"><strong>Chantelle's e-Portfolio</strong></a>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner" class="style2">
+        <div class="inner">
+            <header class="major">
+                <h1>Unit 3 – Correlation and Regression Activities</h1>
+            </header>
+            <div class="content">
+                <p>Machine Learning Module</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+        <section id="one">
+            <div class="inner">
+
+                <header class="major">
+                    <h2>Overview</h2>
+                </header>
+
+                <p>
+                    This collection of Jupyter notebooks demonstrates my understanding of key statistical and machine learning techniques used for data analysis and prediction. Throughout these exercises, I explored covariance and correlation, simple linear regression, multiple linear regression, and polynomial regression using Python and common data science libraries such as NumPy, Pandas, SciPy, Matplotlib, and Scikit-learn.
+                </p>
+
+                <p>
+                    To make each notebook my own, I modified the datasets, corrected coding issues where necessary, and analysed how these changes affected the statistical outputs and predictive models. These activities strengthened my understanding of how different regression techniques model relationships between variables and how changes to the underlying data influence model performance, predictions, and interpretation.
+                </p>
+
+                <hr />
+
+                <header class="major">
+                    <h2>Exercise 1 – Covariance and Pearson Correlation</h2>
+                </header>
+
+                <h3>Activity Summary</h3>
+
+                <p>
+                    I modified the original dataset by reducing the dependency between the two variables and introducing additional random variation. After rerunning the analysis, the covariance remained positive (136.682), indicating that the variables still tended to increase together. However, the Pearson correlation coefficient decreased to 0.411, indicating a moderate positive linear relationship. Compared with the original dataset, the increased variability in data2 weakened the strength of the correlation. This exercise demonstrates that covariance identifies the direction of the relationship, while Pearson's correlation measures both the direction and the strength of the linear association between variables.
+                </p>
+
+                <ul class="actions">
+                    <li>
+                        <a href="pdfs/Unit 3 Experiment 1 Covariance.pdf"
+                           class="button primary"
+                           target="_blank">
+                            View Completed Notebook (PDF)
+                        </a>
+                    </li>
+                </ul>
+
+                <hr />
+
+                <header class="major">
+                    <h2>Exercise 2 – Linear Regression</h2>
+                </header>
+
+                <h3>Activity Summary</h3>
+
+                <p>
+                    In this exercise, I modified the original dataset and corrected a coding error by replacing <code>stat</code> with <code>stats</code> when calling the SciPy regression functions. After changing the data values, I reran the linear regression model and observed changes in the slope, intercept, predicted value, and correlation coefficient. The updated scatter plot still showed a strong negative linear relationship, demonstrating how linear regression models the relationship between two variables and how changing the underlying data affects the regression line and prediction results.
+                </p>
+
+                <ul class="actions">
+                    <li>
+                        <a href="pdfs/Unit 3 Experiment 2 Linear Regression.pdf"
+                           class="button primary"
+                           target="_blank">
+                            View Completed Notebook (PDF)
+                        </a>
+                    </li>
+                </ul>
+
+                <hr />
+
+                <header class="major">
+                    <h2>Exercise 3 – Multiple Linear Regression</h2>
+                </header>
+
+                <h3>Activity Summary</h3>
+
+                <p>
+                    In this exercise, I created a sample dataset to demonstrate multiple linear regression because the original dataset was unavailable. The model was trained using vehicle weight and engine volume to predict CO₂ emissions. After fitting the model, I tested it with a vehicle weighing 2500 kg and having a 1700 cc engine. The model predicted CO₂ emissions of approximately 125.21, showing how multiple independent variables can be combined to estimate a dependent variable. I also updated the prediction to use a pandas DataFrame with matching feature names, eliminating the Scikit-learn warning and following recommended coding practices.
+                </p>
+
+                <ul class="actions">
+                    <li>
+                        <a href="pdfs/Unit 3 Experiment 3 Multiple Linear Regression.pdf"
+                           class="button primary"
+                           target="_blank">
+                            View Completed Notebook (PDF)
+                        </a>
+                    </li>
+                </ul>
+
+                <hr />
+
+                <header class="major">
+                    <h2>Exercise 4 – Polynomial Regression</h2>
+                </header>
+
+                <h3>Activity Summary</h3>
+
+                <p>
+                    In this exercise, I modified the dataset and applied a third-degree polynomial regression model to fit a nonlinear relationship between the variables. After changing the data, the fitted curve adjusted to reflect the new pattern, while the R² score remained high, indicating that the model continued to explain most of the variation in the data. I also changed the prediction point from 17 to 19 and observed a different predicted value. This demonstrates that polynomial regression is useful for modelling curved relationships that cannot be accurately represented using a straight-line regression model.
+                </p>
+
+                <ul class="actions">
+                    <li>
+                        <a href="pdfs/Unit 3 Experiment 4 Polynomial Regression.pdf"
+                           class="button primary"
+                           target="_blank">
+                            View Completed Notebook (PDF)
+                        </a>
+                    </li>
+                </ul>
+
+                <hr />
+
+                <header class="major">
+                    <h2>Overall Reflection</h2>
+                </header>
+
+                <p>
+                    Together, these notebooks demonstrate a progression from analysing simple statistical relationships to applying increasingly sophisticated predictive modelling techniques. They show my ability to modify datasets, interpret statistical outputs, troubleshoot Python code, and evaluate the performance of different regression models.
+                </p>
+
+                <p>
+                    Through completing these exercises, I have gained practical experience using Python for data analysis and developed a stronger understanding of how machine learning techniques can be used to identify patterns and make data-driven predictions.
+                </p>
+
+                <ul class="actions">
+                    <li>
+                        <a href="machine-learning.html" class="button">
+                            ← Back to Machine Learning
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="copyright">
+                <li>&copy; Chantelle Fields</li>
+                <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
